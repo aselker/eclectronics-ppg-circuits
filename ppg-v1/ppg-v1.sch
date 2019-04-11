@@ -539,7 +539,6 @@ F 3 "" H 2375 1275 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2375 925  2375 975 
-NoConn ~ 2650 1225
 $Comp
 L Device:R R?
 U 1 1 5B12D24A
@@ -596,8 +595,6 @@ F 3 "" H 2750 1475 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2700 1725 2750 1725
-Wire Wire Line
 	2750 1725 2750 1625
 Wire Wire Line
 	2750 1025 2750 925 
@@ -646,12 +643,12 @@ $EndComp
 $Comp
 L power:GND #PWR0127
 U 1 1 5B12E1D7
-P 6700 1775
-F 0 "#PWR0127" H 6700 1525 50  0001 C CNN
-F 1 "GND" H 6700 1625 50  0000 C CNN
-F 2 "" H 6700 1775 50  0001 C CNN
-F 3 "" H 6700 1775 50  0001 C CNN
-	1    6700 1775
+P 6300 1875
+F 0 "#PWR0127" H 6300 1625 50  0001 C CNN
+F 1 "GND" H 6300 1725 50  0000 C CNN
+F 2 "" H 6300 1875 50  0001 C CNN
+F 3 "" H 6300 1875 50  0001 C CNN
+	1    6300 1875
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -680,10 +677,9 @@ NoConn ~ 7750 1125
 Wire Wire Line
 	6050 1325 6050 1925
 NoConn ~ 5850 1725
-NoConn ~ 5800 2025
-NoConn ~ 5900 2025
-NoConn ~ 6000 2025
-NoConn ~ 6100 2025
+NoConn ~ 5500 2125
+NoConn ~ 5600 2125
+NoConn ~ 5700 2125
 $Comp
 L Device:C C?
 U 1 1 5B13029E
@@ -870,8 +866,6 @@ Text Label 8675 4025 3    60   ~ 0
 RX
 Text Label 8475 4025 3    60   ~ 0
 RX_IND
-Wire Wire Line
-	6450 1825 6250 1825
 Wire Wire Line
 	5850 925  5900 925 
 Wire Wire Line
@@ -1577,9 +1571,11 @@ F 3 "" H 4850 1825 50  0001 C CNN
 	1    4850 1825
 	0    1    1    0   
 $EndComp
-Connection ~ 2750 1725
 Wire Wire Line
 	2750 925  2375 925 
 Connection ~ 2750 925 
 Connection ~ 2375 925 
+NoConn ~ 5400 2125
+Wire Wire Line
+	5850 1925 6050 1925
 $EndSCHEMATC
