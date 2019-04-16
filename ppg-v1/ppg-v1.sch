@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:ppg-v1-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -246,7 +246,7 @@ F 3 "~" H 2115 4545 30  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L rcpaperplane:BM71BLES1FC2 U7
+L ppg-v1-rescue:BM71BLES1FC2-rcpaperplane U7
 U 1 1 5B12B5AE
 P 8570 3065
 F 0 "U7" H 7770 4115 60  0000 L CNN
@@ -257,7 +257,7 @@ F 3 "" H 8820 2815 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L rcpaperplane:PCM12 SW3
+L ppg-v1-rescue:PCM12-rcpaperplane SW3
 U 1 1 5B12B697
 P 5550 1825
 F 0 "SW3" H 5350 2175 60  0000 L CNN
@@ -268,7 +268,7 @@ F 3 "" H 5550 1825 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L rcpaperplane:USB_microB_2040002-1 J1
+L ppg-v1-rescue:USB_microB_2040002-1-rcpaperplane J1
 U 1 1 5B12B6CA
 P 1075 1325
 F 0 "J1" H 625 1975 60  0000 L CNN
@@ -279,7 +279,7 @@ F 3 "" H 1425 1475 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L rcpaperplane:TPS2113APW U5
+L ppg-v1-rescue:TPS2113APW-rcpaperplane U5
 U 1 1 5B12B707
 P 7050 1225
 F 0 "U5" H 6550 1775 60  0000 L CNN
@@ -287,17 +287,6 @@ F 1 "TPS2113APW" H 6550 1675 60  0000 L CNN
 F 2 "rcpaperplane:TSSOP-8" H 7050 1225 60  0001 C CNN
 F 3 "" H 7050 1225 60  0001 C CNN
 	1    7050 1225
-	1    0    0    -1  
-$EndComp
-$Comp
-L rcpaperplane:IN-S85TATRGB_ALT D2
-U 1 1 5B12BF1D
-P 2750 1175
-F 0 "D2" V 2850 975 60  0000 L CNN
-F 1 "IN-S85TATRGB_ALT" V 2950 975 60  0001 L CNN
-F 2 "rcpaperplane:IN-S85TATRGB" H 2750 1175 60  0001 C CNN
-F 3 "" H 2750 1175 60  0001 C CNN
-	1    2750 1175
 	1    0    0    -1  
 $EndComp
 NoConn ~ 1725 1525
@@ -393,16 +382,16 @@ Connection ~ 5850 925
 $Comp
 L Device:R R5
 U 1 1 5B12D828
-P 2750 1475
-F 0 "R5" V 2830 1475 50  0000 C CNN
-F 1 "1K" V 2750 1475 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2680 1475 50  0001 C CNN
-F 3 "" H 2750 1475 50  0001 C CNN
-	1    2750 1475
+P 2750 1375
+F 0 "R5" V 2830 1375 50  0000 C CNN
+F 1 "1K" V 2750 1375 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2680 1375 50  0001 C CNN
+F 3 "" H 2750 1375 50  0001 C CNN
+	1    2750 1375
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 1725 2750 1625
+	2750 1725 2750 1525
 Wire Wire Line
 	2750 1025 2750 925 
 $Comp
@@ -652,7 +641,7 @@ Wire Wire Line
 	9550 925  9650 925 
 Connection ~ 9550 925 
 $Comp
-L rcpaperplane1-rescue:MCP1702T-3302E_CB U6
+L ppg-v1-rescue:MCP1702T-3302E_CB-rcpaperplane1-rescue U6
 U 1 1 5B12B607
 P 8850 925
 F 0 "U6" H 8350 1275 60  0000 L CNN
@@ -1111,7 +1100,7 @@ Connection ~ 5450 2675
 Wire Wire Line
 	4425 925  4450 925 
 $Comp
-L rcpaperplane1-rescue:MCP73831T-2ACI_OT U2
+L ppg-v1-rescue:MCP73831T-2ACI_OT-rcpaperplane1-rescue U2
 U 1 1 5B12B660
 P 3750 1325
 F 0 "U2" H 3250 1975 60  0000 L CNN
@@ -1586,5 +1575,16 @@ F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2050 5775 50 
 F 3 "~" H 2050 5775 50  0001 C CNN
 	1    2050 5775
 	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D2
+U 1 1 5CB87F94
+P 2750 1125
+F 0 "D2" H 2750 1230 30  0000 C CNN
+F 1 "LED_Small" H 2760 1060 30  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 2750 1125 30  0001 C CNN
+F 3 "~" V 2750 1125 30  0001 C CNN
+	1    2750 1125
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
