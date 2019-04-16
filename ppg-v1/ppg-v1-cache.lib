@@ -197,7 +197,7 @@ ENDDEF
 #
 # Device_Opamp_Dual_Generic
 #
-DEF Device_Opamp_Dual_Generic U 0 20 Y Y 3 L N
+DEF Device_Opamp_Dual_Generic U 0 20 Y Y 3 F N
 F0 "U" 0 200 50 H V L CNN
 F1 "Device_Opamp_Dual_Generic" 0 -200 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
@@ -420,11 +420,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# ppg-v1-rescue_BM71BLES1FC2-rcpaperplane
+# ppg-v1-rescue_BM71BLES1FC2-rcpaperplane-ppg-v1-rescue
 #
-DEF ppg-v1-rescue_BM71BLES1FC2-rcpaperplane U 0 40 Y Y 1 F N
+DEF ppg-v1-rescue_BM71BLES1FC2-rcpaperplane-ppg-v1-rescue U 0 40 Y Y 1 F N
 F0 "U" -800 1050 60 H V L CNN
-F1 "ppg-v1-rescue_BM71BLES1FC2-rcpaperplane" -800 950 60 H V L CNN
+F1 "ppg-v1-rescue_BM71BLES1FC2-rcpaperplane-ppg-v1-rescue" -800 950 60 H V L CNN
 F2 "" 250 -250 60 H I C CNN
 F3 "" 250 -250 60 H I C CNN
 DRAW
@@ -456,11 +456,11 @@ X P3_6 9 100 -1000 200 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# ppg-v1-rescue_MCP1702T-3302E_CB-rcpaperplane1-rescue
+# ppg-v1-rescue_MCP1702T-3302E_CB-rcpaperplane1-rescue-ppg-v1-rescue
 #
-DEF ppg-v1-rescue_MCP1702T-3302E_CB-rcpaperplane1-rescue U 0 40 Y Y 1 F N
+DEF ppg-v1-rescue_MCP1702T-3302E_CB-rcpaperplane1-rescue-ppg-v1-rescue U 0 40 Y Y 1 F N
 F0 "U" -500 350 60 H V L CNN
-F1 "ppg-v1-rescue_MCP1702T-3302E_CB-rcpaperplane1-rescue" -500 250 60 H V L CNN
+F1 "ppg-v1-rescue_MCP1702T-3302E_CB-rcpaperplane1-rescue-ppg-v1-rescue" -500 250 60 H V L CNN
 F2 "" 0 50 60 H I C CNN
 F3 "" 0 50 60 H I C CNN
 DRAW
@@ -471,11 +471,11 @@ X VIN 3 -700 0 200 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# ppg-v1-rescue_MCP73831T-2ACI_OT-rcpaperplane1-rescue
+# ppg-v1-rescue_MCP73831T-2ACI_OT-rcpaperplane1-rescue-ppg-v1-rescue
 #
-DEF ppg-v1-rescue_MCP73831T-2ACI_OT-rcpaperplane1-rescue U 0 40 Y Y 1 F N
+DEF ppg-v1-rescue_MCP73831T-2ACI_OT-rcpaperplane1-rescue-ppg-v1-rescue U 0 40 Y Y 1 F N
 F0 "U" -500 650 60 H V L CNN
-F1 "ppg-v1-rescue_MCP73831T-2ACI_OT-rcpaperplane1-rescue" -500 550 60 H V L CNN
+F1 "ppg-v1-rescue_MCP73831T-2ACI_OT-rcpaperplane1-rescue-ppg-v1-rescue" -500 550 60 H V L CNN
 F2 "" 0 450 60 H I C CNN
 F3 "" 0 450 60 H I C CNN
 DRAW
@@ -488,11 +488,11 @@ X PROG 5 700 0 200 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# ppg-v1-rescue_PCM12-rcpaperplane
+# ppg-v1-rescue_PCM12-rcpaperplane-ppg-v1-rescue
 #
-DEF ppg-v1-rescue_PCM12-rcpaperplane SW 0 40 Y Y 1 F N
+DEF ppg-v1-rescue_PCM12-rcpaperplane-ppg-v1-rescue SW 0 40 Y Y 1 F N
 F0 "SW" -200 350 60 H V L CNN
-F1 "ppg-v1-rescue_PCM12-rcpaperplane" -200 250 60 H V L CNN
+F1 "ppg-v1-rescue_PCM12-rcpaperplane-ppg-v1-rescue" -200 250 60 H V L CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -514,11 +514,11 @@ X ~ 7 150 -300 100 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# ppg-v1-rescue_TPS2113APW-rcpaperplane
+# ppg-v1-rescue_TPS2113APW-rcpaperplane-ppg-v1-rescue
 #
-DEF ppg-v1-rescue_TPS2113APW-rcpaperplane U 0 40 Y Y 1 F N
+DEF ppg-v1-rescue_TPS2113APW-rcpaperplane-ppg-v1-rescue U 0 40 Y Y 1 F N
 F0 "U" -500 550 60 H V L CNN
-F1 "ppg-v1-rescue_TPS2113APW-rcpaperplane" -500 450 60 H V L CNN
+F1 "ppg-v1-rescue_TPS2113APW-rcpaperplane-ppg-v1-rescue" -500 450 60 H V L CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 $FPLIST
@@ -542,11 +542,11 @@ X IN1 8 -700 300 200 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ppg-v1-rescue_USB_microB_2040002-1-rcpaperplane
+# ppg-v1-rescue_USB_microB_2040002-1-rcpaperplane-ppg-v1-rescue
 #
-DEF ppg-v1-rescue_USB_microB_2040002-1-rcpaperplane J 0 40 Y Y 1 F N
+DEF ppg-v1-rescue_USB_microB_2040002-1-rcpaperplane-ppg-v1-rescue J 0 40 Y Y 1 F N
 F0 "J" -450 650 60 H V L CNN
-F1 "ppg-v1-rescue_USB_microB_2040002-1-rcpaperplane" -450 550 60 H V L CNN
+F1 "ppg-v1-rescue_USB_microB_2040002-1-rcpaperplane-ppg-v1-rescue" -450 550 60 H V L CNN
 F2 "" 350 150 50 H I C CNN
 F3 "" 350 150 50 H I C CNN
 $FPLIST

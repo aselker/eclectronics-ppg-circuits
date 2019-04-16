@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:ppg-v1-cache
-EELAYER 29 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -246,18 +246,7 @@ F 3 "~" H 2115 4545 30  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ppg-v1-rescue:BM71BLES1FC2-rcpaperplane U7
-U 1 1 5B12B5AE
-P 8570 3065
-F 0 "U7" H 7770 4115 60  0000 L CNN
-F 1 "BM71BLES1FC2" H 7770 4015 30  0000 L CNN
-F 2 "rcpaperplane:BM71BLES1FC2" H 8820 2815 60  0001 C CNN
-F 3 "" H 8820 2815 60  0001 C CNN
-	1    8570 3065
-	1    0    0    -1  
-$EndComp
-$Comp
-L ppg-v1-rescue:PCM12-rcpaperplane SW3
+L ppg-v1-rescue:PCM12-rcpaperplane-ppg-v1-rescue SW3
 U 1 1 5B12B697
 P 5550 1825
 F 0 "SW3" H 5350 2175 60  0000 L CNN
@@ -268,7 +257,7 @@ F 3 "" H 5550 1825 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ppg-v1-rescue:USB_microB_2040002-1-rcpaperplane J1
+L ppg-v1-rescue:USB_microB_2040002-1-rcpaperplane-ppg-v1-rescue J1
 U 1 1 5B12B6CA
 P 1075 1325
 F 0 "J1" H 625 1975 60  0000 L CNN
@@ -279,7 +268,7 @@ F 3 "" H 1425 1475 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ppg-v1-rescue:TPS2113APW-rcpaperplane U5
+L ppg-v1-rescue:TPS2113APW-rcpaperplane-ppg-v1-rescue U5
 U 1 1 5B12B707
 P 7050 1225
 F 0 "U5" H 6550 1775 60  0000 L CNN
@@ -572,12 +561,12 @@ $EndComp
 $Comp
 L power:GND #PWR052
 U 1 1 5B13111F
-P 9865 2860
-F 0 "#PWR052" H 9865 2610 50  0001 C CNN
-F 1 "GND" H 9865 2710 30  0000 C CNN
-F 2 "" H 9865 2860 50  0001 C CNN
-F 3 "" H 9865 2860 50  0001 C CNN
-	1    9865 2860
+P 9865 2840
+F 0 "#PWR052" H 9865 2590 50  0001 C CNN
+F 1 "GND" H 9865 2690 30  0000 C CNN
+F 2 "" H 9865 2840 50  0001 C CNN
+F 3 "" H 9865 2840 50  0001 C CNN
+	1    9865 2840
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -641,7 +630,7 @@ Wire Wire Line
 	9550 925  9650 925 
 Connection ~ 9550 925 
 $Comp
-L ppg-v1-rescue:MCP1702T-3302E_CB-rcpaperplane1-rescue U6
+L ppg-v1-rescue:MCP1702T-3302E_CB-rcpaperplane1-rescue-ppg-v1-rescue U6
 U 1 1 5B12B607
 P 8850 925
 F 0 "U6" H 8350 1275 60  0000 L CNN
@@ -667,12 +656,12 @@ $EndComp
 $Comp
 L Device:Opamp_Dual_Generic U4
 U 1 1 5CAF65B0
-P 6450 4525
-F 0 "U4" H 6600 4650 30  0000 C CNN
-F 1 "Opamp_Dual_Generic" H 6750 4725 30  0000 C CNN
-F 2 "ppg-v1:DualOpAmp" H 6450 4525 50  0001 C CNN
-F 3 "~" H 6450 4525 50  0001 C CNN
-	1    6450 4525
+P 5225 5950
+F 0 "U4" H 5375 6075 30  0000 C CNN
+F 1 "Opamp_Dual_Generic" H 5525 6150 30  0000 C CNN
+F 2 "ppg-v1:DualOpAmp" H 5225 5950 50  0001 C CNN
+F 3 "~" H 5225 5950 50  0001 C CNN
+	1    5225 5950
 	1    0    0    1   
 $EndComp
 $Comp
@@ -782,7 +771,6 @@ Wire Wire Line
 	6150 4425 6150 4125
 Wire Wire Line
 	6150 4125 6300 4125
-Connection ~ 6150 4425
 Wire Wire Line
 	6600 4125 6750 4125
 Wire Wire Line
@@ -953,12 +941,12 @@ Connection ~ 4925 5610
 $Comp
 L Device:Opamp_Dual_Generic U3
 U 2 1 5CB2F6C0
-P 5225 5950
-F 0 "U3" H 5400 6075 30  0000 C CNN
-F 1 "Opamp_Dual_Generic" H 5475 6175 30  0000 C CNN
-F 2 "ppg-v1:DualOpAmp" H 5225 5950 50  0001 C CNN
-F 3 "~" H 5225 5950 50  0001 C CNN
-	2    5225 5950
+P 6450 4525
+F 0 "U3" H 6625 4650 30  0000 C CNN
+F 1 "Opamp_Dual_Generic" H 6700 4750 30  0000 C CNN
+F 2 "ppg-v1:DualOpAmp" H 6450 4525 50  0001 C CNN
+F 3 "~" H 6450 4525 50  0001 C CNN
+	2    6450 4525
 	1    0    0    1   
 $EndComp
 $Comp
@@ -1094,13 +1082,11 @@ F 3 "~" H 6100 3075 50  0001 C CNN
 	1    6100 3075
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1725 925  2375 925 
 Connection ~ 5450 2675
 Wire Wire Line
 	4425 925  4450 925 
 $Comp
-L ppg-v1-rescue:MCP73831T-2ACI_OT-rcpaperplane1-rescue U2
+L ppg-v1-rescue:MCP73831T-2ACI_OT-rcpaperplane1-rescue-ppg-v1-rescue U2
 U 1 1 5B12B660
 P 3750 1325
 F 0 "U2" H 3250 1975 60  0000 L CNN
@@ -1164,10 +1150,7 @@ F 3 "" H 4850 1825 50  0001 C CNN
 	1    4850 1825
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2750 925  2375 925 
 Connection ~ 2750 925 
-Connection ~ 2375 925 
 NoConn ~ 5400 2125
 Wire Wire Line
 	5850 1925 6050 1925
@@ -1207,30 +1190,10 @@ F 3 "" H 1995 3920 50  0001 C CNN
 $EndComp
 NoConn ~ 2500 4575
 NoConn ~ 2500 4675
-NoConn ~ 2500 4875
-NoConn ~ 2500 4975
-NoConn ~ 2500 5075
-NoConn ~ 2500 5275
-NoConn ~ 2500 5375
-NoConn ~ 2500 5175
 NoConn ~ 3800 4475
 NoConn ~ 3800 4675
 NoConn ~ 3800 4875
 NoConn ~ 3800 5075
-NoConn ~ 3800 5275
-NoConn ~ 3800 5375
-NoConn ~ 3800 5475
-NoConn ~ 3800 5775
-NoConn ~ 3800 5875
-NoConn ~ 3800 5975
-Wire Wire Line
-	2500 5975 2250 5975
-Wire Wire Line
-	2500 5875 2250 5875
-Wire Wire Line
-	2500 5775 2250 5775
-Wire Wire Line
-	2500 5675 2250 5675
 Wire Wire Line
 	5350 5300 5525 5300
 Wire Wire Line
@@ -1383,12 +1346,6 @@ Text GLabel 6100 2625 1    30   Input ~ 0
 GreenLED
 Text GLabel 3800 5175 2    30   Input ~ 0
 GreenLED
-NoConn ~ 8070 4065
-NoConn ~ 8270 4065
-NoConn ~ 8470 4065
-NoConn ~ 8670 4065
-NoConn ~ 8870 4065
-NoConn ~ 9070 4065
 Text GLabel 5025 1150 3    30   Input ~ 0
 VBAT
 Text GLabel 3000 3075 0    30   Input ~ 0
@@ -1427,17 +1384,6 @@ F 3 "" H 3350 2840 30  0001 C CNN
 $EndComp
 Wire Wire Line
 	2830 3000 3100 3000
-$Comp
-L MCU_ST_STM32F4:STM32F411CEUx U1
-U 1 1 5CA9479A
-P 3200 4575
-F 0 "U1" H 3225 5150 30  0000 C CNN
-F 1 "STM32F411CEUx" H 3250 5025 30  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 2600 3075 30  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00115249.pdf" H 3200 4575 30  0001 C CNN
-	1    3200 4575
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2450 4175 2500 4175
 Wire Wire Line
@@ -1538,8 +1484,6 @@ Wire Wire Line
 Wire Wire Line
 	4925 5300 4925 5610
 Wire Wire Line
-	5525 5610 5525 5950
-Wire Wire Line
 	4925 5610 4925 5850
 Connection ~ 5500 4215
 Connection ~ 4900 4425
@@ -1559,21 +1503,17 @@ $EndComp
 Wire Wire Line
 	5500 4625 5500 4525
 Connection ~ 5500 4525
-Connection ~ 4925 5850
-Connection ~ 5525 5950
-Wire Wire Line
-	5525 5950 5525 6050
 NoConn ~ 2500 5475
 NoConn ~ 2500 5575
 $Comp
 L Connector:Conn_01x04_Male J2
 U 1 1 5D0E1BBA
-P 2050 5775
-F 0 "J2" H 2156 6053 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 2156 5962 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2050 5775 50  0001 C CNN
-F 3 "~" H 2050 5775 50  0001 C CNN
-	1    2050 5775
+P 1610 6075
+F 0 "J2" H 1716 6353 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 1716 6262 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1610 6075 50  0001 C CNN
+F 3 "~" H 1610 6075 50  0001 C CNN
+	1    1610 6075
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1587,4 +1527,143 @@ F 3 "~" V 2750 1125 30  0001 C CNN
 	1    2750 1125
 	0    -1   -1   0   
 $EndComp
+Connection ~ 6150 4425
+Wire Wire Line
+	3800 5875 3925 5875
+Wire Wire Line
+	3925 5875 3925 6425
+NoConn ~ 2500 4975
+NoConn ~ 2500 5175
+NoConn ~ 2500 5375
+NoConn ~ 3800 5775
+$Comp
+L ppg-v1-rescue:BM71BLES1FC2-rcpaperplane-ppg-v1-rescue U7
+U 1 1 5B12B5AE
+P 8570 3065
+F 0 "U7" H 7770 4115 60  0000 L CNN
+F 1 "BM71BLES1FC2" H 7770 4015 30  0000 L CNN
+F 2 "rcpaperplane:BM71BLES1FC2" H 8820 2815 60  0001 C CNN
+F 3 "" H 8820 2815 60  0001 C CNN
+	1    8570 3065
+	1    0    0    -1  
+$EndComp
+Text Label 2385 5675 2    60   ~ 0
+CTS
+Text Label 2445 5775 2    60   ~ 0
+RST_N
+Text Label 2480 5875 2    60   ~ 0
+RTS
+Text Label 2460 5975 2    60   ~ 0
+TX
+Text Label 3885 5275 0    60   ~ 0
+RX
+Wire Wire Line
+	1930 5075 2500 5075
+Wire Wire Line
+	1855 4875 2500 4875
+Wire Wire Line
+	1855 6075 1810 6075
+Wire Wire Line
+	1855 4875 1855 6075
+Wire Wire Line
+	1930 5075 1930 6175
+Wire Wire Line
+	1810 6175 1930 6175
+Wire Wire Line
+	1805 6275 1810 6275
+Connection ~ 1810 6275
+Wire Wire Line
+	1810 6275 2000 6275
+Wire Wire Line
+	3925 6425 1810 6425
+Wire Wire Line
+	1810 6425 1810 6380
+$Comp
+L MCU_ST_STM32F4:STM32F411CEUx U1
+U 1 1 5CA9479A
+P 3200 4575
+F 0 "U1" H 3225 5150 30  0000 C CNN
+F 1 "STM32F411CEUx" H 3250 5025 30  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 2600 3075 30  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00115249.pdf" H 3200 4575 30  0001 C CNN
+	1    3200 4575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3795 5375 3795 5380
+Connection ~ 5525 5950
+Connection ~ 4925 5850
+Wire Wire Line
+	5525 5950 5525 6050
+Wire Wire Line
+	5525 5610 5525 5950
+Wire Wire Line
+	2500 5275 2000 5275
+Wire Wire Line
+	2000 5270 2000 5275
+Connection ~ 2000 5275
+Wire Wire Line
+	2000 5275 2000 6275
+Text Label 3915 5375 0    60   ~ 0
+RX_IND
+Wire Wire Line
+	2480 5875 2500 5875
+Wire Wire Line
+	3800 5275 3885 5275
+NoConn ~ 3800 5475
+Wire Wire Line
+	1725 925  2375 925 
+Connection ~ 2375 925 
+Wire Wire Line
+	2375 925  2750 925 
+Connection ~ 2500 5975
+Wire Wire Line
+	2500 5975 2510 5975
+Wire Wire Line
+	2460 5975 2500 5975
+Connection ~ 2500 5775
+Wire Wire Line
+	2500 5775 2505 5775
+Wire Wire Line
+	2445 5775 2500 5775
+Connection ~ 2500 5675
+Wire Wire Line
+	2500 5675 2505 5675
+Wire Wire Line
+	2385 5675 2500 5675
+Wire Wire Line
+	3800 5375 3915 5375
+Wire Wire Line
+	3800 5375 3795 5375
+Connection ~ 3800 5375
+NoConn ~ 3800 5975
+Wire Wire Line
+	9865 2865 9865 2840
+Wire Wire Line
+	1810 6380 2165 6380
+Wire Wire Line
+	2165 6380 2165 5980
+Wire Wire Line
+	2165 5980 2080 5980
+Wire Wire Line
+	2080 5980 2080 6035
+Wire Wire Line
+	2080 6035 2130 6035
+Wire Wire Line
+	2130 6035 2130 5920
+Wire Wire Line
+	2130 5920 2065 5920
+Wire Wire Line
+	2065 5920 2065 5960
+Wire Wire Line
+	2065 5960 2090 5960
+Wire Wire Line
+	2090 5960 2090 5875
+Wire Wire Line
+	2090 5875 1810 5875
+Wire Wire Line
+	1810 5875 1810 5975
+Connection ~ 1810 6380
+Wire Wire Line
+	1810 6380 1810 6375
 $EndSCHEMATC
