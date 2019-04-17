@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/neophile/Documents/School/Eclectronics/circuit/ppg-v1/ppg-v1.sch)
-    (date "Wed 17 Apr 2019 11:56:11 AM EDT")
+    (date "Wed 17 Apr 2019 12:01:48 PM EDT")
     (tool "Eeschema 5.1.0+dfsg1-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block

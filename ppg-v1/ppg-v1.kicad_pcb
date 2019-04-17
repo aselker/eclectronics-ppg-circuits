@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 1)
+    (drawings 4)
     (tracks 622)
     (zones 0)
     (modules 56)
@@ -2445,7 +2445,10 @@
       (net 4 "Net-(C2-Pad2)"))
   )
 
-  (gr_poly (pts (xy 172.212 81.28) (xy 202.692 81.28) (xy 202.692 117.348) (xy 172.212 117.348)) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 172.212 81.28) (end 202.692 81.28) (layer Edge.Cuts) (width 0.15) (tstamp 5CB7558C))
+  (gr_line (start 172.212 117.348) (end 172.212 81.28) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 202.692 117.348) (end 172.212 117.348) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 202.692 81.28) (end 202.692 117.348) (layer Edge.Cuts) (width 0.15))
 
   (segment (start 173.459202 110.625518) (end 173.459202 109.355518) (width 0.25) (layer F.Cu) (net 1))
   (segment (start 184.323698 97.424507) (end 186.573698 99.674507) (width 0.25) (layer F.Cu) (net 1))
