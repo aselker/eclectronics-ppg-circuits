@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/neophile/Documents/School/Eclectronics/circuit/ppg-v1/ppg-v1.sch)
-    (date "Wed 24 Apr 2019 12:57:20 PM EDT")
+    (date "Wed 24 Apr 2019 09:25:59 PM EDT")
     (tool "Eeschema 5.1.0+dfsg1-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -17,7 +17,7 @@
   (components
     (comp (ref Y2)
       (value 32K768)
-      (footprint ppg-v1:32K28)
+      (footprint ppg-v1:ECS-.327-CDX-1082)
       (datasheet ~)
       (libsource (lib Device) (part Crystal_Small) (description "Two pin crystal, small symbol"))
       (sheetpath (names /) (tstamps /))
