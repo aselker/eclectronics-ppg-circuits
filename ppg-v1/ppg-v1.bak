@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:ppg-v1-cache
-EELAYER 29 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -86,7 +86,7 @@ U 1 1 5CAB7729
 P 2215 4445
 F 0 "Y2" V 2215 4530 30  0000 L CNN
 F 1 "32K768" V 2215 4385 20  0000 L CNN
-F 2 "ppg-v1:32K28" H 2215 4445 30  0001 C CNN
+F 2 "ppg-v1:ECS-.327-CDX-1082" H 2215 4445 30  0001 C CNN
 F 3 "~" H 2215 4445 30  0001 C CNN
 	1    2215 4445
 	0    1    1    0   
@@ -1548,15 +1548,15 @@ F 3 "" H 8820 2815 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 2385 5675 2    60   ~ 0
-CTS
+RTS
 Text Label 2445 5775 2    60   ~ 0
 RST_N
 Text Label 2480 5875 2    60   ~ 0
-RTS
+CTS
 Text Label 2460 5975 2    60   ~ 0
-TX
-Text Label 3885 5275 0    60   ~ 0
 RX
+Text Label 3885 5275 0    60   ~ 0
+TX
 Wire Wire Line
 	1930 5075 2500 5075
 Wire Wire Line
@@ -1642,26 +1642,6 @@ Wire Wire Line
 Wire Wire Line
 	1810 6380 2165 6380
 Wire Wire Line
-	2165 6380 2165 5980
-Wire Wire Line
-	2165 5980 2080 5980
-Wire Wire Line
-	2080 5980 2080 6035
-Wire Wire Line
-	2080 6035 2130 6035
-Wire Wire Line
-	2130 6035 2130 5920
-Wire Wire Line
-	2130 5920 2065 5920
-Wire Wire Line
-	2065 5920 2065 5960
-Wire Wire Line
-	2065 5960 2090 5960
-Wire Wire Line
-	2090 5960 2090 5875
-Wire Wire Line
-	2090 5875 1810 5875
-Wire Wire Line
 	1810 5875 1810 5975
 Connection ~ 1810 6380
 Wire Wire Line
@@ -1706,4 +1686,8 @@ Wire Wire Line
 Connection ~ 2000 3400
 Wire Wire Line
 	2000 3400 2025 3400
+Wire Wire Line
+	2165 6380 2165 5875
+Wire Wire Line
+	2165 5875 1810 5875
 $EndSCHEMATC

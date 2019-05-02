@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:ppg-v1-cache
-EELAYER 29 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -1548,15 +1548,13 @@ F 3 "" H 8820 2815 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 2385 5675 2    60   ~ 0
-CTS
+RTS
 Text Label 2445 5775 2    60   ~ 0
 RST_N
 Text Label 2480 5875 2    60   ~ 0
-RTS
-Text Label 2460 5975 2    60   ~ 0
-TX
+CTS
 Text Label 3885 5275 0    60   ~ 0
-RX
+RX_IND
 Wire Wire Line
 	1930 5075 2500 5075
 Wire Wire Line
@@ -1605,62 +1603,23 @@ Connection ~ 2000 5275
 Wire Wire Line
 	2000 5275 2000 6275
 Text Label 3915 5375 0    60   ~ 0
-RX_IND
+RX
 Wire Wire Line
 	2480 5875 2500 5875
 Wire Wire Line
 	3800 5275 3885 5275
-NoConn ~ 3800 5475
 Wire Wire Line
 	1725 925  2375 925 
 Connection ~ 2375 925 
 Wire Wire Line
 	2375 925  2750 925 
-Connection ~ 2500 5975
 Wire Wire Line
 	2500 5975 2510 5975
-Wire Wire Line
-	2460 5975 2500 5975
-Connection ~ 2500 5775
-Wire Wire Line
-	2500 5775 2505 5775
-Wire Wire Line
-	2445 5775 2500 5775
-Connection ~ 2500 5675
-Wire Wire Line
-	2500 5675 2505 5675
-Wire Wire Line
-	2385 5675 2500 5675
-Wire Wire Line
-	3800 5375 3915 5375
-Wire Wire Line
-	3800 5375 3795 5375
-Connection ~ 3800 5375
 NoConn ~ 3800 5975
 Wire Wire Line
 	9865 2865 9865 2840
 Wire Wire Line
 	1810 6380 2165 6380
-Wire Wire Line
-	2165 6380 2165 5980
-Wire Wire Line
-	2165 5980 2080 5980
-Wire Wire Line
-	2080 5980 2080 6035
-Wire Wire Line
-	2080 6035 2130 6035
-Wire Wire Line
-	2130 6035 2130 5920
-Wire Wire Line
-	2130 5920 2065 5920
-Wire Wire Line
-	2065 5920 2065 5960
-Wire Wire Line
-	2065 5960 2090 5960
-Wire Wire Line
-	2090 5960 2090 5875
-Wire Wire Line
-	2090 5875 1810 5875
 Wire Wire Line
 	1810 5875 1810 5975
 Connection ~ 1810 6380
@@ -1706,4 +1665,28 @@ Wire Wire Line
 Connection ~ 2000 3400
 Wire Wire Line
 	2000 3400 2025 3400
+Wire Wire Line
+	2165 6380 2165 5875
+Wire Wire Line
+	2165 5875 1810 5875
+NoConn ~ 2510 5975
+Connection ~ 2500 5775
+Wire Wire Line
+	2500 5775 2505 5775
+Wire Wire Line
+	2445 5775 2500 5775
+Connection ~ 2500 5675
+Wire Wire Line
+	2500 5675 2505 5675
+Wire Wire Line
+	2385 5675 2500 5675
+Wire Wire Line
+	3800 5375 3915 5375
+Wire Wire Line
+	3800 5375 3795 5375
+Connection ~ 3800 5375
+Text Label 3840 5475 0    60   ~ 0
+TX
+Wire Wire Line
+	3800 5475 3840 5475
 $EndSCHEMATC
